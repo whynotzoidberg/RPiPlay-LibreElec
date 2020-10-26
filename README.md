@@ -16,6 +16,7 @@ This script replace .profile and autostart.sh if you modify this files before. Y
 3. ``` wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/install.sh ```
 4. ``` chmod +x install.sh ```
 5. ``` ./install.sh ```
+6. follow instructions provides by install.sh
 
 
 # RPiPlay-LibreElec automatic install scripts
@@ -37,5 +38,5 @@ Zaroven jako vedlejsi efekt umoznuje git prikaz v LibreElec prikazove radce skrz
 3. ``` wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/install.sh ```
 4. ``` chmod +x install.sh ```
 5. ``` ./install.sh ```
-
+6. nasledujte instrukce install.sh
 
