@@ -28,9 +28,9 @@ Skript na automatickou instalaci https://github.com/FD-/RPiPlay s použitím docke
 * zapnuté SSH v LibreElec
 
 ## Varování
-Tento skript nahrazuje .profile a autostart.sh pokud døíve byla provedena zmìna tìchto souborù. Musíte ji provést znovu.
+Tento skript nahrazuje .profile a autostart.sh pokud døíve byla provedena zmena tìchto souboru. Musíte ji provést znovu.
 
-## Instalaèní kroky
+## Instalacní kroky
 1. SSH do LibreElec
 2. ``` cd ~/ ```
 3. ``` wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/install.sh ```
