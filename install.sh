@@ -38,6 +38,6 @@ echo "Cleaning temp files"
 rm -rf /storage/RPiPlay-LibreElec
 cd ~/
 rm -rf install.sh 
-echo "Instalation is done now I restarting LibreElec. After restart AirPlay is working"
+echo "Instalation is done now I restarting LibreElec. After restart AirPlay starts working"
 shutdown -r now
 
