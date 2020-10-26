@@ -9,11 +9,9 @@ read number
 echo "You entered: $number"
 cd ~/
 touch .profile
-cat <<EOT >> .profile
-function git () {
-(docker run -ti --rm -v '${HOME}':/root -v '$(pwd)':/git $number '"$@"')
-}
-EOT
+echo "function git () {" >> .profile
+echo "(docker run -ti --rm -v "'${HOME}'":/root -v "'$(pwd)'":/git $number "'"$@"'")" >> .profile
+echo "}" >> .profile
 source ~/.profile
 rm -rf ~/gitapp
 cd /storage
