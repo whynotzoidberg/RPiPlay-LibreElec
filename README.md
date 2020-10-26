@@ -7,6 +7,9 @@ Scripts to automatic install of https://github.com/FD-/RPiPlay with use docker f
 * Docker addon in Kodi
 * enabled SSH to LibreElec
 
+## Warning
+This script changes replace .profile and autostart.sh
+
 ## Install steps
 1. SSH to LibreElec
 2. ``` cd ~/ ```

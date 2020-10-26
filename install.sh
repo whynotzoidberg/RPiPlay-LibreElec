@@ -20,6 +20,7 @@ cd /storage/RPiPlay-LibreElec/RPiPlayBuild
 ./build_with_docker.sh
 chmod +x /storage/RpiPlay/rpiplay
 cd /storage/.config/
+rm -rf autostart.sh
 touch autostart.sh
 echo -n "Enter Name of Device > "
 read device
@@ -33,6 +34,6 @@ EOT
 chmod +x autostart.sh
 echo "Cleaning temp files"
 rm -rf /storage/RPiPlay-LibreElec
-echo "Instalation is done now I restarting LibreElec. After restart AirPlay is working"
-#shutdown -r now
+echo "Instalation is done now I restarting LibreElec. After restart AirPlay is working and you can delete install.sh"
+shutdown -r now
 
