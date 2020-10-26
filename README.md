@@ -8,7 +8,7 @@ Scripts to automatic install of https://github.com/FD-/RPiPlay with use docker f
 * enabled SSH to LibreElec
 
 ## Warning
-This script replace .profile and autostart.sh if you modify this files before. You must do it again.
+This script replace .profile and autostart.sh if you modify this files before. You must do it again. Bonus is working git command in LibreElec command line throught Docker.
 
 ## Install steps
 1. SSH to LibreElec
@@ -29,6 +29,7 @@ Skript na automatickou instalaci https://github.com/FD-/RPiPlay s použitím docke
 
 ## Varování
 Tento skript nahrazuje .profile a autostart.sh pokud døíve byla provedena zmena tìchto souboru. Musíte ji provést znovu.
+Zaroven jako vedlejsi efekt umoznuje git prikaz v LibreElec prikazove radce skrze Docker
 
 ## Instalacní kroky
 1. SSH do LibreElec
