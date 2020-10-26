@@ -16,7 +16,7 @@ source ~/.profile
 rm -rf ~/gitapp
 cd /storage
 git clone https://github.com/sousasov/RPiPlay-LibreElec
-cd git /storage/RPiPlay-LibreElec/RPiPlayBuild
+cd /storage/RPiPlay-LibreElec/RPiPlayBuild
 ./build_with_docker.sh
 chmod +x /storage/RpiPlay/rpiplay
 cd /storage/.config/
