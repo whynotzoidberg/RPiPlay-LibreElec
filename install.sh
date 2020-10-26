@@ -11,14 +11,14 @@ cd ~/
 touch .profile
 cat <<EOT >> .profile
 function git () {
-(docker run -ti --rm -v ${HOME}:/root -v $(pwd):/git $number "$@")
+(docker run -ti --rm -v '${HOME}':/root -v '$(pwd)':/git $number '"$@"')
 }
 EOT
 source ~/.profile
 rm -rf ~/gitapp
 cd /storage
 git clone https://github.com/sousasov/RPiPlay-LibreElec
-cd /storage/RPiPlay-LibreElec/RPiPlayBuild
+cd git /storage/RPiPlay-LibreElec/RPiPlayBuild
 ./build_with_docker.sh
 chmod +x /storage/RpiPlay/rpiplay
 cd /storage/.config/
