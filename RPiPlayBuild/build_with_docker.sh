@@ -1,6 +1,6 @@
 #!/bin/bash
-rm -rf ./release
+rm -rf /storage/RpiPlay
 docker build . -t rpiplay_builder
-mkdir release
-docker run -it -v ${PWD}/release:/release rpiplay_builder /bin/bash -c "cp /work/RPiPlay/build/rpiplay /work/RPiPlay/build/lib* /release"
-echo "RPiPlay has been built in the ./release folder. Execute it with \"cd release && ./rpiplay\"."
+mkdir /storage/RpiPlay
+docker run -it -v /storage/RpiPlay:/release rpiplay_builder /bin/bash -c "cp /work/RPiPlay/build/rpiplay /work/RPiPlay/build/lib* /release"
+echo "RPiPlay has been built in the /storage/RpiPlay folder."
