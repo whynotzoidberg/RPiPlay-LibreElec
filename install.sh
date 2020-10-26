@@ -8,6 +8,7 @@ echo -n "Enter Successfully built number > "
 read number
 echo "You entered: $number"
 cd ~/
+rm -rf .profile
 touch .profile
 echo "function git () {" >> .profile
 echo "(docker run -ti --rm -v "'${HOME}'":/root -v "'$(pwd)'":/git $number "'"$@"'")" >> .profile
@@ -17,6 +18,7 @@ rm -rf ~/gitapp
 cd /storage
 git clone https://github.com/sousasov/RPiPlay-LibreElec
 cd /storage/RPiPlay-LibreElec/RPiPlayBuild
+chmod +x build_with_docker.sh
 ./build_with_docker.sh
 chmod +x /storage/RpiPlay/rpiplay
 cd /storage/.config/
@@ -34,6 +36,8 @@ EOT
 chmod +x autostart.sh
 echo "Cleaning temp files"
 rm -rf /storage/RPiPlay-LibreElec
-echo "Instalation is done now I restarting LibreElec. After restart AirPlay is working and you can delete install.sh"
+cd ~/
+rm -rf install.sh 
+echo "Instalation is done now I restarting LibreElec. After restart AirPlay is working"
 shutdown -r now
 

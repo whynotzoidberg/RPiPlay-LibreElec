@@ -8,10 +8,30 @@ Scripts to automatic install of https://github.com/FD-/RPiPlay with use docker f
 * enabled SSH to LibreElec
 
 ## Warning
-This script changes replace .profile and autostart.sh
+This script replace .profile and autostart.sh if you modify this files before. You must do it again.
 
 ## Install steps
 1. SSH to LibreElec
+2. ``` cd ~/ ```
+3. ``` wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/install.sh ```
+4. ``` chmod +x install.sh ```
+5. ``` ./install.sh ```
+
+
+# RPiPlay-LibreElec automatic install scripts
+Skript na automatickou instalaci https://github.com/FD-/RPiPlay s použitím dockeru a https://github.com/nicolaspernoud/RPiPlay-docker-builder
+
+## Požadavky
+* Raspberry-pi2-4
+* LibreElec 9.2.x
+* Docker addon v Kodi
+* zapnuté SSH v LibreElec
+
+## Varování
+Tento skript nahrazuje .profile a autostart.sh pokud døíve byla provedena zmìna tìchto souborù. Musíte ji provést znovu.
+
+## Instalaèní kroky
+1. SSH do LibreElec
 2. ``` cd ~/ ```
 3. ``` wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/install.sh ```
 4. ``` chmod +x install.sh ```
