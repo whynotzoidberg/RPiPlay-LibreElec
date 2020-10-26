@@ -36,5 +36,5 @@ chmod +x autostart.sh
 echo "Cleaning temp files"
 rm -rf /storage/RPiPlay-LibreElec
 echo "Instalation is done now I restarting LibreElec. After restart AirPlay is working"
-shutdown -r now
+#shutdown -r now
 
