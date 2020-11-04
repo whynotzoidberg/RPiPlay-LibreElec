@@ -6,6 +6,7 @@ Scripts to automatic install of https://github.com/FD-/RPiPlay with use docker f
 * LibreElec 9.2.x
 * Docker addon in Kodi
 * enabled SSH to LibreElec
+* Disabled Airplay in Kodi
 
 ## Warning
 This script replace .profile and autostart.sh if you modify this files before. You must do it again. Bonus is working git command in LibreElec command line throught Docker.
@@ -20,19 +21,20 @@ This script replace .profile and autostart.sh if you modify this files before. Y
 
 
 # RPiPlay-LibreElec automatic install scripts
-Skript na automatickou instalaci https://github.com/FD-/RPiPlay s pouûitÌm dockeru a https://github.com/nicolaspernoud/RPiPlay-docker-builder
+Skript na automatickou instalaci https://github.com/FD-/RPiPlay s pou≈æit√≠m dockeru a https://github.com/nicolaspernoud/RPiPlay-docker-builder
 
-## Poûadavky
+## Po≈æadavky
 * Raspberry-pi2-4
 * LibreElec 9.2.x
 * Docker addon v Kodi
-* zapnutÈ SSH v LibreElec
+* zapnut√© SSH v LibreElec
+* Vypnute Airplay v Kodi
 
-## Varov·nÌ
-Tento skript nahrazuje .profile a autostart.sh pokud d¯Ìve byla provedena zmena tÏchto souboru. MusÌte ji provÈst znovu.
+## Varov√°n√≠
+Tento skript nahrazuje .profile a autostart.sh pokud d√∏√≠ve byla provedena zmena t√¨chto souboru. Mus√≠te ji prov√©st znovu.
 Zaroven jako vedlejsi efekt umoznuje git prikaz v LibreElec prikazove radce skrze Docker
 
-## InstalacnÌ kroky
+## Instalacn√≠ kroky
 1. SSH do LibreElec
 2. ``` cd ~/ ```
 3. ``` wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/install.sh ```
