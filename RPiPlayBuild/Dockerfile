@@ -26,6 +26,6 @@ RUN cp /usr/lib/arm-linux-gnueabihf/libplist-2.0.so.3 ./build/
 
 # # Alter the cmake file to use the libdns_sd and libplist libraries locally
 RUN printf "\nadd_library(dns_sd SHARED IMPORTED GLOBAL)\nset_target_properties(dns_sd PROPERTIES IMPORTED_LOCATION \"./libdns_sd.so.1\")\n" >>./lib/CMakeLists.txt
-RUN printf "\nadd_library(plist SHARED IMPORTED GLOBAL)\nset_target_properties(plist PROPERTIES IMPORTED_LOCATION \"./libplist-2.0.so.3\")\n" >>./lib/CMakeLists.txt
+RUN printf "\nadd_library(plist-2.0 SHARED IMPORTED GLOBAL)\nset_target_properties(plist-2.0 PROPERTIES IMPORTED_LOCATION \"./libplist-2.0.so.3\")\n" >>./lib/CMakeLists.txt
 
 RUN cd build && cmake .. && make
