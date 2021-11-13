@@ -2,7 +2,7 @@
 cd ~/
 mkdir gitapp
 cd gitapp
-wget https://raw.githubusercontent.com/sousasov/RPiPlay-LibreElec/master/gitapp/Dockerfile
+wget https://raw.githubusercontent.com/whynotzoidberg/RPiPlay-LibreElec/master/gitapp/Dockerfile
 docker build .
 echo -n "Enter Successfully built number > "
 read number
@@ -16,7 +16,7 @@ echo "}" >> .profile
 source ~/.profile
 rm -rf ~/gitapp
 cd /storage
-git clone https://github.com/sousasov/RPiPlay-LibreElec
+git clone https://github.com/whynotzoidberg/RPiPlay-LibreElec
 cd /storage/RPiPlay-LibreElec/RPiPlayBuild
 chmod +x build_with_docker.sh
 ./build_with_docker.sh
